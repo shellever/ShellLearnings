@@ -120,4 +120,5 @@ exit 0
 
 # 11/27/2017
 # examples
+# http://tuxtweaks.com/2014/05/bash-getopts/
 #./cmd_getopts.sh -d bar -c chu -b man -a foo example1.txt example2.txt
