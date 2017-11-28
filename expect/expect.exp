@@ -1,0 +1,12 @@
+#!/usr/bin/expect
+
+set account [lindex $argv 0]
+set password [lindex $argv 1]
+
+spawn ./login.sh
+
+expect "account:" { send "$account\n" }
+expect "password:" { send "$password\n" }
+
+interact
+
