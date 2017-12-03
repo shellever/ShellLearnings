@@ -2,7 +2,7 @@
 
 
 # 开启调试模式
-#set -x
+set -x
 
 
 # 1--
@@ -59,6 +59,20 @@ echo "================="
 
 # 5--
 # 将一个变量的值作为数组的内容
+# * 号在shell中会自动被扩展成具体的文件名称，然后再传递给命令
+# 若没有找到合适的文件名称，即扩展不成功，则直接将此传递给命令进行处理
 list=($(ls .))
 echo ${list[@]}
+echo "================="
+
+
+# 6--
+declare -A fformats
+fformats["shell"]="*.sh"
+fformats["python"]="py"
+fformats["lua"]="lua"
+fformats["perl"]="pl"
+for fformat in ${fformats[@]}; do
+	echo "*.$fformat"
+done
 
