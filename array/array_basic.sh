@@ -27,6 +27,7 @@ echo "\${#friends[2]}=${#friends[2]}"
 # 切片方式获取内容
 echo "\${friends[@]:1:2}=${friends[@]:1:2}"
 # 从第二个元素开始
-echo "\${friends[@]:2}=${friends[2]:2}"
+echo "\${friends[@]:2}=${friends[@]:2}"
 # 到第二个元素为止
 echo "\${friends[@]::2}=${friends[@]::2}"
+
