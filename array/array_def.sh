@@ -56,3 +56,9 @@ for ele in ${animals[@]}; do
 done
 echo "================="
 
+
+# 5--
+# 将一个变量的值作为数组的内容
+list=($(ls .))
+echo ${list[@]}
+

@@ -14,3 +14,4 @@ for ((i = 0; i < ${#array[@]}; i++ )); do
 done
 echo "after sort: "
 echo ${array[@]}
+
