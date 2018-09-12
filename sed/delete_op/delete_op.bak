@@ -1,0 +1,14 @@
+LUAINC = /usr/local/include
+LUALIB = /usr/local/lib
+
+count = 3
+
+LUAINC = /usr/local/include2
+LUALIB = /usr/local/lib2
+
+count = 3
+
+LUAINC = /usr/local/include3
+LUALIB = /usr/local/lib3
+
+count = 3
